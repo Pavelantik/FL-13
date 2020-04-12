@@ -1,0 +1,171 @@
+@media print {
+    .tm-sidebar, .tm-team-img, .gallery-container, .carousel-indicators,#about, .img-contact-us, #contact {
+        display: none;
+     }
+     body,.tm-main-content, .tm-content-box, .padding-medium {
+         padding-top: 0;
+         padding-bottom: 5px;
+         margin-bottom: 0;
+     }
+     .tm-content-box {
+         padding-top: 0;
+         margin-bottom: 0;
+     }
+     .tm-banner-text{
+         font-family: monospace;
+     }
+     section{
+        text-align: center;
+    }
+     .tm-team-description-container{
+        max-width: inherit 
+     }
+     .tm-section-title{
+        text-transform: uppercase;       
+     }
+      .tm-section-description {         
+         font-style: italic;
+     }
+     .heading {
+         margin: 0;
+         padding: 0 160px;
+         text-align: center;
+     }
+      section.heading h2{
+         color:lightskyblue;
+         font-weight: normal;
+     }
+    ol{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ol li:nth-child(odd){
+        text-align: left;
+    }
+    ol li:nth-child(even){
+        text-align: right;
+    }    
+}
+
+@media screen{
+    .tm-nav-item-link:hover{
+        background-color: lightskyblue;
+        color: #fff;
+    }
+    .tm-banner{
+        background: linear-gradient(to top, lightskyblue, burlywood);
+        
+    }
+    .tm-banner-inner{
+        background: #f5f5f5;        
+    }
+    @keyframes rotatefn {
+        from {transform: rotate(45deg);}
+        60% {transform: rotate(0deg)}
+        to {transform: rotate(0deg)}
+    }
+    .tm-banner-text{
+        word-spacing: 10px;
+        letter-spacing: 5px;
+        text-shadow:0 4px #76cdd7, 0 0.5em 3px #76cdd7;
+        transform: rotate(0deg);
+        animation: rotatefn 6s ease-in-out;       
+    } 
+    
+    .tm-main-nav, .tm-content-header, section {
+        box-shadow: 0 0 12px 3px rgba(61,55,61,0.7);
+    } 
+    .tm-content-box.flex-2-col {
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+        }
+    .tm-section-title {
+        text-align: center;
+    }
+    .tm-section-description{
+        text-indent: 20px;
+        font-style: italic;
+    }
+    .tm-box-bg-title:hover{
+        background-color: lightskyblue;
+        color: #fff;
+    }
+    section:before{
+        content: "";
+        display: inline-block;
+        width:0px ;
+        height:0px;
+        border-style: solid;
+        border-width: 20px  ;
+        border-color: lightskyblue transparent transparent lightskyblue;  
+    }
+    .heading h2{
+        color: lightskyblue;
+        text-align: center;
+    }
+    .heading ol{
+        list-style-type: decimal-leading-zero;
+        width: fit-content;
+    }
+    .heading a:hover{        
+      color: red;
+      font-weight: bold;       
+    }
+    .heading li:hover:before{
+        content: ">";
+        color:red;
+    }
+    .heading .text::after {
+        content: "New";
+        font-variant: small-caps;
+        font-weight: bold;
+        color:red;
+        font-size: 70%;
+        vertical-align: super;        
+    }
+    h2+p{
+        font-style: italic;
+    }
+    .blocks .img-fluid, .blocks .tm-content-box div{
+        padding: 10px;
+    }
+    .blocks li:nth-child(even){
+        background-color: lightskyblue;
+        color: #f5f5f5;
+    }
+    .blocks .gallery-container p::first-letter{
+        font-weight: bold;
+    }
+    #contact h2{
+        text-align: right;
+    }
+    #contact_subject{
+        background-image: url("../img/email-icon.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+    .form-control:focus
+    {
+      background-color: lightskyblue;
+    }  
+      #contact_name, #contact_email, #contact_subject {
+        border:none;
+        border-bottom: 1px solid lightskyblue !important;         
+      }
+      .submit-btn{
+          border-radius: 0;
+          border-width: 2px;
+          background-color:#f5f5f5 ;
+          color:lightskyblue;
+          border-color: lightskyblue;
+          float:right;
+      }
+      .submit-btn:hover{
+        background-color:lightseagreen;
+        border-color: white;
+        color:white;
+      }  
+}
+
