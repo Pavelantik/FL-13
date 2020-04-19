@@ -1,0 +1,148 @@
+body {
+    font-size: calc(0.5vw + 10px) ; 
+    font-family:'Noto Serif', serif;
+    margin: auto;       
+}
+.header{
+    margin-bottom: 110px;
+}
+.main_nav_bar{
+    display: flex;
+    justify-content: space-around;
+}
+#site-logo p {
+    text-transform: uppercase;
+    color:#777777;
+    font-weight: bold;
+}
+#nav_menu{
+    width: auto;
+    min-width: 300px;
+}
+#nav_menu ul{
+    min-width: 300px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+#nav_menu li{
+    margin-left:15px;
+}
+#nav_menu a:hover{
+    color:#bfba55;
+    
+}
+#nav_menu a{
+    text-decoration: none;
+    color: #777777;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.header_bg_img_container{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(../img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.head_title_row-1{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+}
+.head_title-row-2{
+    color: #bfba55;
+    font-size: 0.9rem;
+}
+.btn-about-epam{
+    width: 158px;
+    height: 44px;
+    border-radius: 22px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+main{
+    margin-left:auto ;
+    margin-right: auto;
+    max-width: 60%;
+    min-width: 300px;
+    width: 100%;
+}
+.section{
+    margin: 80px auto;
+}
+.section_image{
+    max-width: 100%;
+    width: 100%;
+}
+.section_content_title{
+    color:black;
+    font-weight: bold;
+    font-size:  28px;
+}
+.section_content_info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    font-size:15px;
+} 
+.autor{
+    display: flex;
+    align-items: center;
+}
+.autor_img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.section_content_text{
+    font-size:15px;
+}
+.section_content_read_bt{
+    margin-top:45px;
+    width: 190px;
+    height: 50px;
+    border-radius: 22px;
+    font-size: 15px;
+    border-color: #ccc;
+    background-color: white;
+    border-style: solid;
+    color:#777;
+    font-weight: bold;
+}
+hr{
+    border-top: 1px solid #F0F0F0
+}
+.page_footer{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    color:#777;
+     padding: 35px 0;
+}
+.page_footer_content{
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;   
+}
+.page_footer_content .short_info_title, .contact_details_title{
+    font-size: 28px;
+    color:white;
+}
+.short_info {
+    width: 50%;
+} 
+.contact_details_container{
+    width: 40%;
+}
