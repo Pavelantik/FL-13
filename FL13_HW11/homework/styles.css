@@ -1,0 +1,63 @@
+#root{
+    width: 500px;
+    border-radius: 25px;
+    box-shadow:0 0 10px grey;
+}
+li{
+    list-style-type: none;
+}
+li:hover{
+    background-color:lightgray;
+    cursor: pointer;
+}
+li:hover input {
+    background-color:lightgray;
+    cursor: pointer;
+}
+.title-element{
+    color: black;
+  font-style: normal; 
+  font-size: 16px; 
+  vertical-align: 6px;
+
+}
+.folder {
+    color:#EDBC0B;
+}
+
+
+.input-disabled{
+    background-color:white; 
+    border:none;
+    color:black;
+}
+
+.subfolder-hidden{
+    display: none;
+}
+
+#context-menu{
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    padding:10px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow:0 0 7px 5px lightgray;
+}
+.context-items{
+    margin:0;
+}
+.context-menu-hidden{
+    display:none;
+}
+.context-menu-shown{
+    display: initial;
+}
+#context-menu button{
+    border:none;
+    background-color: white;
+}
+#context-menu button:hover{
+    background-color:lightgray;
+}
