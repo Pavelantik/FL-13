@@ -1,0 +1,64 @@
+
+.header-container, .section-1__content, .section-2__container, .page-footer__container{
+    max-width: 1100px;
+}
+.navbar-brand{
+    font-size: 30px;
+    
+}
+
+.img-container__img{
+    width: 100%;
+} 
+.content__head-title{
+    font-size: 40px;
+}
+.content__head-text{
+    font-size: 18px;
+}
+.content__head-btn, .subscribe-form__btn{
+    background-color: #FF7F50;
+    color: white;
+}
+.main-content__section-1, .main-content, .page-footer{
+    background-color: #343A40;
+}
+
+
+.section-1__cards-container{
+    background-color: transparent;
+    
+}
+.cards-container__card{
+    background-color: transparent;
+}
+.section-1{
+    color:white;
+}
+
+.header-section-1__title, .header-section-2__title{
+ 
+    font-size: 24px;
+}
+.header-section-1__text, .header-section-2__text{
+    font-size: 18px;
+    max-width: 600px;
+
+}
+ .text-container__title, .text-container__text {
+    font-size: 18px;
+
+}
+.section-1 .cards-container__card{
+    border-color: transparent;
+}
+.section-2{
+    background-color:#F8F9FA;
+}
+
+.section-2 .cards-container__card{
+    border-color: transparent;
+}
+.page-footer{
+    color:white;
+}
