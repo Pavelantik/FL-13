@@ -24,8 +24,9 @@ const Machine = function(color, engine){
                 this.isStopping = false;
                 this.speed = 0; 
                 this.isDriving = true;        
-            this.driving = setInterval(() => {
+                this.driving = setInterval(() => {
                 this.speed += 20;
+                console.log(this.speed);
                 if (this.speed > this.maxSpeed){
                     clearInterval(this.stopping);
                     console.log('speed is too high, SLOW DOWN!');                   
@@ -44,13 +45,15 @@ const Machine = function(color, engine){
             this.isDriving = false;
             this.isStopping = true;
             this.stopping = setInterval(() => {
-                this.speed -=20;
-                if(this.speed<=0){
-                    this.speed = 0;
-                    this.showStopMessage(this.driveMaxSpeed);
-                    this.isStopping = false;
-                    clearInterval(this.stopping);
-                }
+            console.log(this.speed);
+            this.speed -=20;            
+            if(this.speed<=0){
+                this.speed = 0;
+                console.log(this.speed);
+                this.showStopMessage(this.driveMaxSpeed);
+                this.isStopping = false;
+                clearInterval(this.stopping);
+            }
             }, decreaseSpeedInterval);
         } else {
             console.log('Already slows down');
@@ -109,6 +112,7 @@ const Motorcycle = function(model, color, engine){
             console.log('Let’s drive');      
             this.driving = setInterval(() => {
                  this.speed += 20;
+                 console.log(this.speed);
                  if (this.speed > this.maxSpeed){
                      clearInterval(this.stopping);
                      console.log('speed is too high, SLOW DOWN!');
@@ -125,6 +129,7 @@ const Motorcycle = function(model, color, engine){
 }
 Motorcycle.prototype = Object.create(Vehicle.prototype);
 Motorcycle.prototype.constructor = Motorcycle;
+
 
 
 
