@@ -1,0 +1,78 @@
+#container{
+    margin: auto;
+    border-color: cornflowerblue;
+    border-style: solid;
+    // background-color:grey;
+    width:640px;
+    height: 1000px;
+
+}
+
+.hidden {
+    display: none;
+}
+.rock-show{
+    background-image: url('../img/rock_640.png');
+}
+
+.clas-css{
+    
+    background-color:yellow;
+    width:200px;
+    height: 200px;
+
+}
+
+.img-pc-select {
+    width: 640px;
+    height: 640px;
+
+}
+.rules-container{
+    color: red;
+    margin: auto;
+    h2 {
+        text-align: center;
+        font-size: 3em;
+        
+    }
+    
+    .rules-list {
+        padding-left: 10px;
+        //text-align: center;
+        
+        white-space: pre-line;
+        font-size: 1.5em;
+        .rules-header{
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+}
+.bt-container {
+    margin: auto;
+    padding: 10px;
+    button {
+        font-size: 1.2em;
+        width: 200px;
+        height: 50px;
+    }
+    .reset-lnk{
+        font-size: 1.5em;
+        color: red;
+        text-align: center;
+
+    }
+}
+.img-pc-select{
+    max-width:640px;
+    max-height: 640px;
+    background-image: url('../img/rock_640.png');
+    //background-color: blue;
+}
+
+button:hover, .reset-lnk:hover {
+    cursor: pointer;
+     color: blue;
+     font-weight: bold;
+}
