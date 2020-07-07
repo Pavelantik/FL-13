@@ -1,0 +1,12 @@
+span {
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+   
+
+}
+.descriptionContainer {
+    width: 300px;
+    display: inline-block;
+}
